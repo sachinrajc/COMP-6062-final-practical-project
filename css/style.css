@@ -1,0 +1,11 @@
+@media only screen and (max-width:650px) {
+    body{
+        background-color: #000;
+        color: #FFF;
+        font-family: "Comic Sans MS", "Comic Sans", cursive; 
+    };
+}
+
+h1 {
+    color: #007bff;
+}
