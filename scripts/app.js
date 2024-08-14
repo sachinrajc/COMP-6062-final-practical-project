@@ -37,7 +37,9 @@ const app = Vue.createApp({
                 });
             },
         fetchWeather() {
-            fetch(`https://goweather.herokuapp.com/weather/${encodeURIComponent(this.city)}`)
+            //fetch(`https://goweather.herokuapp.com/weather/${encodeURIComponent(this.city)}`)
+            //fetch(`https://weather-data.liamstewart.ca/?city=London`)
+            fetch(`https://weather-data.liamstewart.ca/?city=${encodeURIComponent(this.city)}`)
                 .then(response => {
                     return response.json()
                 })
