@@ -9,3 +9,12 @@
 h1 {
     color: #007bff;
 }
+h2{
+    color: red;
+}
+body{
+    color: white;
+    padding-left: 2%;
+    padding-top: 2%;
+    background-color: #000;
+}
