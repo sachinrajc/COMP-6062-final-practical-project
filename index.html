@@ -17,13 +17,17 @@
             </div>  
             <div>
                 <h2> Weather Today</h2>
-                <p>Location: {{ city }}</p>
+                <img src="weather1.jpg" alt="weather" width="500" height="200">
+                <p><strong>Location:</strong> {{ city }}</p>
                 <p>Temperature: {{ weather.temperature }}</p>
                 <p>Wind: {{ weather.wind }}</p>
                 <p>Description: {{ weather.description }}</p>
                 <input type="text" v-model="city" placeholder="Enter city">
                 <button @click="fetchWeather">Get Weather</button>
             </div>     
+
+            
+
             <div>
                 <h2>Dictionary</h2>
                 <input type="text" v-model="word" placeholder="Enter word">

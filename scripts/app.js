@@ -37,9 +37,9 @@ const app = Vue.createApp({
                 });
             },
         fetchWeather() {
-            //fetch(`https://goweather.herokuapp.com/weather/${encodeURIComponent(this.city)}`)
+            fetch(`https://goweather.herokuapp.com/weather/${encodeURIComponent(this.city)}`)
             //fetch(`https://weather-data.liamstewart.ca/?city=London`)
-            fetch(`https://weather-data.liamstewart.ca/?city=${encodeURIComponent(this.city)}`)
+            //fetch(`https://weather-data.liamstewart.ca/?city=${encodeURIComponent(this.city)}`)
                 .then(response => {
                     return response.json()
                 })
@@ -52,7 +52,7 @@ const app = Vue.createApp({
                     console.error('Error fetching weather data:', error);
                 });
             },
-        fetchdefine() {
+        fetchdefine(word) {
             fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(this.word)}`)
                 .then(response => {
                     return response.json()
